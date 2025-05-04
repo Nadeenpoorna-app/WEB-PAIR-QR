@@ -13,44 +13,25 @@ const fs = require("fs-extra");
 const { Boom } = require("@hapi/boom");
 
 const MESSAGE = process.env.MESSAGE ||  `
-*SESSION GENERATED SUCCESSFULY* ✅
+✅ *𝗦𝗘𝗦𝗦𝗜𝗢𝗡 𝗚𝗘𝗡𝗘𝗥𝗔𝗧𝗘𝗗 𝗦𝗨𝗖𝗖𝗘𝗦𝗦𝗙𝗨𝗟𝗬* 🚀
 
-*Gɪᴠᴇ ᴀ ꜱᴛᴀʀ ᴛᴏ ʀᴇᴘᴏ ꜰᴏʀ ᴄᴏᴜʀᴀɢᴇ* 🌟
-https://github.com/GuhailTechInfo/ULTRA-MD
+> 🚫ᴅᴏɴ'ᴛ ꜱʜᴀʀᴇ ᴛʜɪꜱ ᴄᴏᴅᴇ ᴡɪᴛʜ ᴀɴʏᴏɴᴇ!!!
 
-*Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ ꜰᴏʀ ϙᴜᴇʀʏ* 💭
-https://t.me/GlobalBotInc
-https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07
+✨ *Gɪᴠᴇ ᴀ Sᴛᴀʀ ᴛᴏ Rᴇᴘᴏ Fᴏʀ Cᴏᴜʀᴀɢᴇ* 🌟
+https://github.com/Nadeenpoorna-app/NADEEN-MD
 
+🪀 *Fᴏʟʟᴏᴡ Wʜᴀᴛꜱᴀᴘᴘ Cʜᴀɴɴᴇʟ* 🪀
+https://whatsapp.com/channel/0029VagN2qW3gvWUBhsjcn3I
 
-*Yᴏᴜ-ᴛᴜʙᴇ ᴛᴜᴛᴏʀɪᴀʟꜱ* 🪄 
-https://youtube.com/GlobalTechInfo
+👨🏻‍💻 *Cᴏɴᴛᴀᴄᴛ Oᴡɴᴇʀ* 👨🏻‍💻
+https://wa.me/94711451319
 
-*ULTRA-MD--WHATTSAPP-BOT* 🥀
-`
+🎥 *Yᴏᴜ-ᴛᴜʙᴇ ᴛᴜᴛᴏʀɪᴀʟꜱ* 💻
+https://youtube.com/@NADEEN-MD
 
+> ▄︻デռǟɖɛɛռ-ʍɖ══━一
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+🎯 *Nα∂єєη м∂ ву Nα∂єєη Pσσяηα* 🎯`
 if (fs.existsSync('./auth_info_baileys')) {
 
     fs.emptyDirSync(__dirname + '/auth_info_baileys');
@@ -171,7 +152,7 @@ if (fs.existsSync('./auth_info_baileys')) {
 
 
 
-                        const string_session = mega_url.replace('https://mega.nz/file/', '');
+                        const string_session = mega_url.replace('https://mega.nz/file/', '𝙽𝙰𝙳𝙴𝙴𝙽-𝙼𝙳=');
 
 
 
