@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
     body {
       display: flex;
       flex-direction: column;
@@ -12,9 +12,10 @@
       justify-content: center;
       height: 100vh;
       margin: 0;
-      background: linear-gradient(135deg,#4302bd,#0049d1, #00a303,#0838a8,#3608a8);
-      background-size: 300% 300%;
+      background: linear-gradient(-45deg,#020ffa,#0063db,#00BFFF,#228B22);
+      background-size: 400% 400%;
       animation: gradientAnimation 15s ease infinite;
+	    font-family: 'Roboto',sans-serif;
     }
 
     @keyframes gradientAnimation {
@@ -25,13 +26,10 @@
 
     h1 {
       color: white;
-      font-size: 10px;
-      font-family: "Boldonse", system-ui;
-      font-style: normal;
-      margin-bottom: 20px;
-      text-align: center;
-      letter-spacing: 2px;
-      text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      font-size: 50px;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      text-shadow: 0 0 15px rgba(255, 255, 255, 0.7),0 0 30px rgba(255, 255, 255, 0.6),0 0 45px rgba(255, 255, 255, 0.5);
       -webkit-text-stroke: 0.5px rgba(65, 53, 53, 0.5);
       user-select: none;
     }
