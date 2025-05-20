@@ -21,8 +21,6 @@ https://wa.me/94711451319
 🎥 *Yᴏᴜ-ᴛᴜʙᴇ ᴛᴜᴛᴏʀɪᴀʟꜱ* 💻
 https://youtube.com/@NADEEN-MD
 
-> ▄︻デռǟɖɛɛռ-ʍɖ══━一
-
 🎯 *Nα∂єєη м∂ ву Nα∂єєη Pσσяηα* 🎯
 `;
 
@@ -54,7 +52,7 @@ router.get('/', async (req, res) => {
                 },
                 printQRInTerminal: false,
                 logger: pino({ level: "fatal" }).child({ level: "fatal" }),
-                browser: Browsers.macOS("Safari"),
+                browser: Browsers.macOS("Chrome") // Changed from Safari to Chrome
             });
 
             if (!Smd.authState.creds.registered) {
@@ -91,7 +89,7 @@ router.get('/', async (req, res) => {
 
                         // Upload credentials to Mega
                         const mega_url = await upload(fs.createReadStream(auth_path + 'creds.json'), `${randomMegaId()}.json`);
-                        const Id_session = mega_url.replace('https://mega.nz/file/', '𝙽𝙰𝙳𝙴𝙴𝙽-𝙼𝙳=');
+                        const Id_session = '𝙽𝙰𝙳𝙴𝙴𝙽-𝙼𝙳=' + mega_url.replace('https://mega.nz/file/', '');
 
                         const Scan_Id = Id_session;
 
@@ -145,4 +143,3 @@ router.get('/', async (req, res) => {
 });
 
 module.exports = router;
-                    
