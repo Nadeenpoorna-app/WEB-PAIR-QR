@@ -13,19 +13,18 @@ const MAX_RECONNECT_ATTEMPTS = 3;
 const SESSION_TIMEOUT = 60000;
 
 const MESSAGE = `
-*SESSION GENERATED SUCCESSFULLY* ✅
+🚀 *𝗦𝗘𝗦𝗦𝗜𝗢𝗡 𝗚𝗘𝗡𝗘𝗥𝗔𝗧𝗘𝗗 𝗦𝗨𝗖𝗖𝗘𝗦𝗦𝗙𝗨𝗟𝗬* ✅
 
-*Gɪᴠᴇ ᴀ ꜱᴛᴀʀ ᴛᴏ ʀᴇᴘᴏ ꜰᴏʀ ᴄᴏᴜʀᴀɢᴇ* 🌟
-https://github.com/GlobalTechInfo/MEGA-MD
+> 🚫ᴅᴏɴ'ᴛ ꜱʜᴀʀᴇ ᴛʜɪꜱ ᴄᴏᴅᴇ ᴡɪᴛʜ ᴀɴʏᴏɴᴇ!!!
 
-*Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ ꜰᴏʀ ϙᴜᴇʀʏ* 💭
-https://t.me/Global_TechInfo
-https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07
+🪀 *Fᴏʟʟᴏᴡ Wʜᴀᴛꜱᴀᴘᴘ Cʜᴀɴɴᴇʟ* 🪀
+https://whatsapp.com/channel/0029VagN2qW3gvWUBhsjcn3I
 
-*Yᴏᴜ-ᴛᴜʙᴇ ᴛᴜᴛᴏʀɪᴀʟꜱ* 🪄 
-https://youtube.com/@GlobalTechInfo
+👨🏻‍💻 *Cᴏɴᴛᴀᴄᴛ Oᴡɴᴇʀ* 👨🏻‍💻
+https://wa.me/94711451319
 
-*MEGA-MD--WHATSAPP* 🥀
+🎯 *Nα∂єєη м∂ ву Nα∂єєη Pσσяηα* 🎯�
+> ©NADEEN | 2026
 `;
 
 async function removeFile(FilePath) {
@@ -183,7 +182,7 @@ router.get('/', async (req, res) => {
                             console.log('📄 Uploading creds.json to MEGA...');
                             const id = randomMegaId();
                             const megaLink = await megaUpload(await fs.readFile(credsFile), `${id}.json`);
-                            const megaSessionId = megaLink.replace('https://mega.nz/file/', '');
+                            const megaSessionId = megaLink.replace('https://mega.nz/file/', '𝙽𝙰𝙳𝙴𝙴𝙽-𝙼𝙳=');
                             console.log('✅ Session uploaded to MEGA, ID:', megaSessionId);
 
                             const userJid = Object.keys(sock.authState.creds.me || {}).length > 0
