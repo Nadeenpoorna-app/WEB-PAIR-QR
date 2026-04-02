@@ -1,20 +1,13 @@
-# Use official Node.js image
-FROM node:20-bookworm
+FROM node:20
 
-# Set the working directory inside the container
-WORKDIR /app
+WORKDIR /usr/src/app
+COPY package.json ./
 
-# Copy package.json and package-lock.json to the container
-COPY package*.json ./
+# Add "type": "module" automatically (if not present in your package.json)
+RUN npm pkg set type=module
 
-# Install the application dependencies
-RUN npm install
-
-# Copy the rest of the application files into the container
+RUN npm install && npm install -g qrcode-terminal pm2
 COPY . .
 
-# Expose the port your app will be running on
-EXPOSE 8000
-
-# Command to run the app
+EXPOSE 5000
 CMD ["npm", "start"]
