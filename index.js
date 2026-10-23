@@ -1,3 +1,5 @@
+import 'dotenv/config'
+
 import express from 'express';
 import bodyParser from 'body-parser';
 import path from 'path';
@@ -35,7 +37,7 @@ app.use('/', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`@ Nadeen Poorna\nServer running on http://localhost:${PORT}`);
+    console.log(`YoutTube: @GlobalTechInfo\nGitHub: @GlobalTechInfo\nServer running on http://localhost:${PORT}`);
 });
 
 export default app;
